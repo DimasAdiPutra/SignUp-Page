@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign Up Page</title>
+
+		<!-- Style -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="container">
+			<section class="picture">
+				<img src="img/women.jpg" alt="Women Picture" />
+			</section>
+			<!-- Form -->
+			<section class="signup">
+				<form action="" method="post">
+					<!-- Name Input -->
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" />
+					<!-- Email Input -->
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" />
+					<!-- Password Input -->
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password" />
+					<!-- Terms and Services -->
+					<input type="checkbox" name="agreement" id="agreement" />
+					<label for="agreement"
+						>I agree to the <a href="#">Terms and Services</a></label
+					>
+					<button type="submit">Create Account</button>
+				</form>
+				<button type="submit">Sign Up With Google</button>
+				<p class="signin">Already have an account? <a href="#">Sign In</a></p>
+			</section>
+		</main>
+	</body>
+</html>
