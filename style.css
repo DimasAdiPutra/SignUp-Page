@@ -1,1 +1,71 @@
+/* Nunito Font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+
+/* Style Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/* Variable */
+:root {
+	--white: #f9fefa;
+	--brown: #864528;
+	--black: #080a09;
+}
+
+/* Body Style */
+body {
+	font-family: "Nunito", sans-serif;
+	font-size: 1rem;
+	background-color: var(--brown);
+	display: flex;
+	min-height: 100vh;
+}
+
+main.container {
+	width: 100%;
+	max-width: 1440px;
+	margin: auto;
+	background-color: var(--white);
+	box-shadow: 0px 105px 178px rgba(8, 10, 9, 0.2),
+		0px 47.0997px 74.3641px rgba(8, 10, 9, 0.137277),
+		0px 28.1832px 39.7586px rgba(8, 10, 9, 0.108173),
+		0px 17.9573px 22.2884px rgba(8, 10, 9, 0.0938867),
+		0px 10.8925px 11.8372px rgba(8, 10, 9, 0.0812626),
+		0px 5.16472px 4.92572px rgba(8, 10, 9, 0.0568327);
+	border-radius: 1.25rem;
+	overflow: hidden;
+	display: flex;
+}
+
+.picture {
+	height: 100%;
+	position: relative;
+}
+
+.picture img {
+	display: flex;
+	object-fit: cover;
+	object-position: center;
+	max-height: 1024px;
+	max-width: 720px;
+}
+
+.picture::after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: var(--brown);
+	background: linear-gradient(
+		26.94deg,
+		rgba(8, 10, 9, 0.7) -3.58%,
+		rgba(8, 10, 9, 0) 103.42%
+	);
+}
