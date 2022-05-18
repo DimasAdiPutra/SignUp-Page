@@ -168,9 +168,38 @@ main.container {
 	margin-bottom: 12px;
 }
 
-/* Media Query 1 - Desktop 1440 */
+.signup form .signin {
+	font-family: inherit;
+	display: flex;
+	justify-content: center;
+}
+
+.signup form .signin a {
+	color: var(--brown);
+	font-weight: 700;
+	margin-left: 10px;
+}
+
+/* Media Query - Desktop 1440px */
 @media screen and (max-width: 1440px) {
 	main.container {
 		border-radius: 0;
+	}
+}
+
+/* Media Query - Mobile 576px */
+@media screen and (max-width: 768px) {
+	.picture {
+		display: none;
+	}
+
+	.signup {
+		padding: 20px;
+		height: 100vh;
+	}
+
+	.signup form input,
+	.signup form button {
+		width: 100%;
 	}
 }
